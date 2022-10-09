@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./Intro.css";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
+import selfpic from "../../img/selfpic.png";
 import boy from "../../img/boy.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
@@ -13,6 +14,7 @@ import Instagram from "../../img/instagram.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import selfPic from '../../img/imagessss.jpeg';
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -28,9 +30,9 @@ const Intro = () => {
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Andrew Thomas</span>
+          <span>Md Hessamuddin</span>
           <span>
-            Frontend Developer with high level of experience in web designing
+            Android Developer with high level of experience in app designing
             and development, producting the Quality work
           </span>
         </div>
@@ -39,16 +41,29 @@ const Intro = () => {
         </Link>
         {/* social icons */}
         <div className="i-icons">
+          <a href="https://github.com/Md-Saif-Ryen">
           <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+          </a>
+         <a href="https://www.linkedin.com/in/md-saif-b56976212/">
+         <img src={LinkedIn} alt="" />
+         </a>
+         <a href="https://www.instagram.com/saifryen/">
+         <img src={Instagram} alt="" />
+         </a>
+          
         </div>
       </div>
       {/* right image side */}
       <div className="i-right">
-        <img src={Vector1} alt="" />
-        <img src={Vector2} alt="" />
-        <img src={boy} alt="" />
+        {/* <img src={Vector1} alt="" />
+        <img src={Vector2} alt="" /> */}
+        <div className="images">
+        <div className="imgs">
+        <img src={selfPic} alt="" />
+        </div>
+        </div>
+        
+        {/* <img src={selfPic} alt="" /> */}
         {/* animation */}
         <motion.img
           initial={{ left: "-36%" }}
@@ -60,17 +75,17 @@ const Intro = () => {
 
         <motion.div
           initial={{ top: "-4%", left: "74%" }}
-          whileInView={{ left: "68%" }}
+          whileInView={{ left: "58%" }}
           transition={transition}
-          className="floating-div"
+          className="floating-div1"
         >
-          <FloatinDiv img={crown} text1="Web" text2="Developer" />
+          <FloatinDiv img={crown} text1="App" text2="Developer"/>
         </motion.div>
 
         {/* animation */}
         <motion.div
           initial={{ left: "9rem", top: "18rem" }}
-          whileInView={{ left: "0rem" }}
+          whileInView={{ left: "-3rem" }}
           transition={transition}
           className="floating-div"
         >

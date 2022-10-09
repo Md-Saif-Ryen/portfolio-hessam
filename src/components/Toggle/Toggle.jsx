@@ -13,13 +13,13 @@ const Toggle = () => {
   };
   return (
     <div className="toggle" onClick={handleClick}>
-      <Moon />
-      <Sun />
+     <div className="moon"> <Moon/></div>
+      <div className="sun"><Sun /></div>
       {/*                              toggle.css mein left ki property aik assign hy ussy delete
                                           krna hy pehly */}
       <div
         className="t-button"
-        style={darkMode ? { left: "2px" } : { right: "2px" }}
+        style={darkMode ? { left: "5px" } : { right: "4px" }}
       ></div>
     </div>
   );

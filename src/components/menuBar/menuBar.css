@@ -1,0 +1,53 @@
+.menu{
+    position: relative;
+    position: fixed;
+    z-index: 9;
+}
+
+nav{
+    position: fixed;
+    display: block;
+    border-radius: 34px;
+    border: none;
+    backdrop-filter: blur(15px);
+    margin: 2px;
+    background:rgb(0, 0, 0,0.4);
+    width: max-content;
+    padding: 0.7rem 1.7rem;
+    z-index: 91;
+    left: 37%;
+    top: 29rem;
+    display: flex;
+    gap: 0.8rem;
+
+}
+nav a{
+    padding: 0.2rem;
+    background: transparent;
+    border-radius: 56%;
+    display: flex;
+    color: black;
+    font-size: 1rem;
+}
+nav a:hover{
+    background: rgb(0, 0, 0,0.3);
+
+}
+nav a.active{
+    background: linear-gradient(45deg,#e58bf880, #6afff880);
+    color: white;
+    font-size: 4.4rem;
+}
+
+@media screen and (max-width: 480px) {
+    nav{
+        left: 5%;
+        top: 38rem;
+    }
+}
+
+/* @media screen and (min-widht: 400px){
+    nav{
+        top:38rem;
+    }
+} */

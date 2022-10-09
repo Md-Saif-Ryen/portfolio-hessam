@@ -10,9 +10,11 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { useContext } from "react";
 import { themeContext } from "./Context";
+import Menubar from './components/menuBar/menuBar'
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  
   return (
     <div
       className="App"
@@ -22,7 +24,9 @@ function App() {
       }}
     >
       <Navbar />
+      <Menubar/>
       <Intro />
+
       <Services />
       <Experience />
       <Works />

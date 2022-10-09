@@ -6,7 +6,8 @@ import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import Resume from './resume.pdf';
+import Resume from './resumes.pdf';
+import Resumes from './resumes.pdf';
 
 const Services = () => {
   // context
@@ -31,7 +32,7 @@ const Services = () => {
           <br />
           ispum is simpley dummy text of printing
         </spane>
-        <a href={Resume} download>
+        <a href={Resumes} download>
           <button className="button s-button">Download CV</button>
         </a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
@@ -59,7 +60,7 @@ const Services = () => {
           <Card
             emoji={Glasses}
             heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
+            detail={"Java, Flutter, Dart, Reactjs, Android Studio, Firebase"}
           />
         </motion.div>
         {/* 3rd */}

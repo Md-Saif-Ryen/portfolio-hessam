@@ -4,9 +4,15 @@
     border: 3px solid var(--orange);
     border-radius: 1rem;
     position: relative;
-    padding: 2px;
+    /* padding: 12px 2px 28px 20px; */
     cursor: pointer;
-
+    padding: 5px;
+    /* padding: 5px 8px 25px ; */
+    left: -40%;
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 20ms
 }
 .toggle>*{
     width: 1rem;
@@ -15,6 +21,31 @@
 }
 .t-button{
     border-radius: 100%;
+    width: 1.5rem;
+    height: 1.4rem;
+    margin-top: -0.2rem;
+    margin-left: -0.2rem;
+    margin-bottom: 40px;
     background: var(--orange);
     position: absolute;
 }
+
+.toggle:hover{
+    padding-right: 4rem;
+    padding-left: 4rem;
+    /* transition: all 3 ease-in-out 3 ; */
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 20ms;
+    justify-content: space-around;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    left:-40%;
+}
+
+.moon{
+    width: 4rem;
+}
+
+
